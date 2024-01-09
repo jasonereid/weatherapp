@@ -4,123 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jason's Weather App</title>
-    <script src="weather.js"></script> 
+    <script src="app.js"></script> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <style>
-        body {
-            background: linear-gradient(to left, green , teal);
-            position: relative;
-            font-family: 'PT Sans Narrow', sans-serif;
-        }
-        #clouds {
-            display: none;
-            position: absolute;
-        top: 20px;
-        right: auto;
-        left: auto;
-        z-index: -98;
-        background-image: url("images/clouds.png");
-        background-size: cover;
-        background-position: top;
-        background-repeat: no-repeat;
-        height: 90vh;
-        width: 70vh;
-        border-radius: 10%; 
-border-width: 3px;
-border-color: rgba(0, 0, 0, 0.091);
-border-style: solid;
-        }
-        #sun {
-            display: none;
-            position: absolute;
-        top: 20px;
-        right: auto;
-        left: auto;
-        z-index: -99;
-        background-image: url("images/sunny.png");
-        background-size: cover;
-        background-position: top;
-        background-repeat: no-repeat;
-        height: 90vh;
-        width: 70vh;
-        border-radius: 10%; 
-border-width: 3px;
-border-color: rgba(0, 0, 0, 0.091);
-border-style: solid;
-        }
-        #rain {
-            display: none;
-            position: absolute;
-        top: 20px;
-        right: auto;
-        left: auto;
-        z-index: -100;
-        background-image: url("images/rain.png");
-        background-size: cover;
-        background-position: top;
-        background-repeat: no-repeat;
-        height: 90vh;
-        width: 70vh;
-        border-radius: 10%; 
-border-width: 3px;
-border-color: rgba(0, 0, 0, 0.091);
-border-style: solid;
-        }
-        #clear {
-        position: absolute;
-        top: 20px;
-        right: auto;
-        left: auto;
-        z-index: -1000;
-        background-image: url("images/clear.png");
-        background-size: cover;
-        background-position: top;
-        background-repeat: no-repeat;
-        height: 90vh;
-        width: 70vh;
-        border-radius: 9%; 
-border-width: 3px;
-border-color: rgba(0, 0, 0, 0.091);
-border-style: solid;
-        }
-        #top {
-            z-index: 99;
-        }
-        #uicontainer {
-            background: rgb(0,0,0);
-background: radial-gradient(circle, rgba(0, 0, 0, 0.115) 0%, rgba(182,182,182,0.776829481792717) 100%);
-border-radius: 10%; 
-border-width: 3px;
-border-color: rgba(0, 0, 0, 0.091);
-border-style: solid;
-}
-    </style>
+    <link rel="stylesheet" href="custom.css">
 </head>
 <body id="bgcolor" class="d-flex justify-content-center">
-    <div id="clouds"></div>
-    <div id="sun"></div>
-    <div id="rain"></div>
-    <div id="clear"></div>
+    
     <div class="pt-3 mt-5" id="top">
     <div class="container-md" id="uicontainer">
-        <h1 id="message">HELLO</h1>
-        <h3>YOUR LOCAL WEATHER: </h3>
+        <h1 id="message" class="mt-2">HELLO</h1>
+        <h3>TODAY'S WEATHER: </h3>
+        <a href="#">
         <div class="row">
-        <div class="col-md-6">Temperature in Fahrenheit: </div>
-        <div id="temp" class="col-md-6"></div>
+            <div class="col-md-1"></div>
+        <div class="col-sm border m-1">Temperature in Fahrenheit: </div>
+        <div id="temp" class="col-sm border m-1"></div>
+        <div class="col-md-1"></div>
         </div>
+        </a>
+        <a href="#">
         <div class="row">
-        <div class="col-md-6">Cloud cover %:</div>
-        <div id="cloudcover" class="col-md-6"></div>
+            <div class="col-md-1"></div>
+        <div class="col-sm border m-1">Cloud cover %:</div>
+        <div id="cloudcover" class="col-sm border m-1"></div>
+        <div class="col-md-1"></div>
         </div>
+    </a>
+    <a href="#">
         <div class="row">
-        <div class="col-md-6">Precipitation in inches:</div>
-        <div id="precipitation" class="col-md-6"></div>
+            <div class="col-md-1"></div>
+        <div class="col-sm border m-1">Humidity %::</div>
+        <div id="precipitation" class="col-sm border m-1"></div>
+        <div class="col-md-1"></div>
         </div>
+    </a>
+    <a href="#">
         <div class="row">
-        <div class="col-md-6">Windspeed MPH: </div>
-        <div id="windspeed" class="col-md-6"></div>
+            <div class="col-md-1"></div>
+        <div class="col-sm border m-1">Windspeed MPH: </div>
+        <div id="windspeed" class="col-sm border m-1"></div>
+        <div class="col-md-1"></div>
+        </div>
+        </a>
+        <div class="row text-center mt-2">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+            <button type="button" class="btn btn-outline-light btn-sm" onClick="window.location.reload()">
+                search another city
+             </button>
+            </div>
+    <p> </p>
         </div>
     </div>
 </div>

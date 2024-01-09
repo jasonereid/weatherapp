@@ -1,0 +1,29 @@
+body {
+    position: relative;
+    font-family: 'PT Sans Narrow', sans-serif;
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+a div div:hover {
+color: #fdec6e;
+box-shadow:0px 0px 30px #fdec6e;
+-moz-transition: all 0.2s ease-in;
+-o-transition: all 0.2s ease-in;
+-webkit-transition: all 0.2s ease-in;
+transition: all 0.2s ease-in;
+}
+a, a div, a div div {
+text-decoration: none;
+color: black;
+}
+#top {
+    z-index: 99;
+}
+#uicontainer {
+    background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0, 0, 0, 0.115) 0%, rgba(182,182,182,0.776829481792717) 100%);
+border-radius: 10%; 
+border-width: 3px;
+border-color: rgba(0, 0, 0, 0.091);
+border-style: solid;
+}
