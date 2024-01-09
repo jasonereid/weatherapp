@@ -26,3 +26,9 @@ border-width: 3px;
 border-color: rgba(0, 0, 0, 0.091);
 border-style: solid;
 }
+
+@media (min-width: 576px) { 
+    #precipitation, #cloudcover, #temp, #windspeed {
+        border-style: none;
+    }
+ }
