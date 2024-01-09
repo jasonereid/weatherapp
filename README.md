@@ -1,5 +1,6 @@
 # weatherapp
-JavaScript, HTML5/CSS3, Bootstrap 5
+Made with JavaScript, HTML5/CSS3, Bootstrap 5
+
 ![image](https://github.com/jasonereid/weatherapp/assets/94079137/1532fcc2-7041-4a19-96a7-2db1c2b00bb8)
 
 ## Live Preview here: https://jasonereid.github.io/weatherapp/
