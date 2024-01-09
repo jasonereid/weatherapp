@@ -18,17 +18,21 @@ async function updateDom() {
     let precipitation = document.getElementById("precipitation");
     let windspeed = document.getElementById("windspeed");
     let message = document.getElementById("message");
+    let body = document.getElementById("bgcolor");
     // update divs with new data
     temp.innerHTML = func1.main.temp;
         if(func1.main.temp < 50) {
-           temp.innerHTML += " &#10052;"
+           temp.innerHTML += " &#10052;";
+           body.style.background = "linear-gradient(to left, #FFFBE4, #64C4EE)";
         }
         if(func1.main.temp > 75) {
-            temp.innerHTML += " &#x1F31E;"
+            temp.innerHTML += " &#x1F31E;";
+            body.style.background = "linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)";
          }
     cloudcover.innerHTML = func1.clouds.all;
         if(func1.clouds.all > 50) {
             cloudcover.innerHTML += " &#9729;"
+            body.style.background = "linear-gradient(to left, #a2a2a2, #a4C4EE);";
         }
     precipitation.innerHTML = func1.main.humidity;
         if(func1.main.humidity > 50) {
