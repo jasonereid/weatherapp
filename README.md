@@ -17,4 +17,6 @@ The JS has two main functions, getApi() and updateDom(). These are both async fu
 The data being sent from the API is positioned in the middle of the UI via CSS grid run by Bootstrap 5's row/column grid system. 
 
 ## Credits
+
+API - openweathermap.org
 font PT Sans Narrow - Designed by ParaType
