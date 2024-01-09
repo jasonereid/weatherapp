@@ -13,8 +13,15 @@ This application takes input (City Name) from the user, hits the api.openweather
 ## JavaScript structure
 The JS has two main functions, getApi() and updateDom(). These are both async functions that are called in order via a third function, runFuncs(). Stucturing the application this way allows for the API to take time before returning the weather data so that the DOM is updated only after the API finishes providing the data.
 
+The updateDom() function fills in the appropriate divs with the returned data from the API, as well as change the message text at tge top of the UI. Finally, it changes the body's CSS background property to appear cooler or warmer depending on the temperature and cloud cover numbers returned.
 ## HTML and CSS structure
 The data being sent from the API is positioned in the middle of the UI via CSS grid run by Bootstrap 5's row/column grid system. 
+
+## Future plans
+- Refactor this app to use React
+- Add error handling 
+- Add location detection for a default weather set
+- Add the option to save multiple locations as tabs
 
 ## Credits
 
